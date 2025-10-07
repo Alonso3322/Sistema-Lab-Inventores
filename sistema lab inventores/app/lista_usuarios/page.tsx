@@ -130,7 +130,7 @@ export default function lista_usuarios() {
       {/* Header */}
       <header className="bg-[#5802F7] text-white py-4 text-center shadow-lg">
         <img src="https://icaro.inventores.org/build/assets/images/Inventores.png" alt="Icono" className="w-24 h-20 mx-auto"/>
-        <h1 className="text-2xl font-bold">Klipper_Web</h1>
+        <h1 className="text-2xl font-bold">Sistema Laboratorio</h1>
         <nav className="flex justify-center items-center mt-2 gap-4">
           <Link href="/perfil_admin" className="relative text-white font-bold py-3 px-5 mx-4 rounded-md transition-all duration-300 ease-in-out hover:text-[#d90f0f] hover:-translate-y-0.5">
             <i className="fas fa-user-shield"></i> Perfil Admin
@@ -276,7 +276,7 @@ export default function lista_usuarios() {
                               <i className="fas fa-trash"></i>
                             </button>
                             <Link
-                              href={`/ver?user=${user.id_usuario}`}
+                              href={`/ver_usuario?user=${user.id_usuario}`}
                               className="bg-blue-500 text-white px-3 py-2 rounded-lg text-sm hover:bg-blue-600 transition-all duration-300 font-bold shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                               title="Ver detalles"
                             >

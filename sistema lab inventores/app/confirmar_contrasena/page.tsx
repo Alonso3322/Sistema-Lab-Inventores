@@ -1,6 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import Link from 'next/link';
+
 
 export default function ConfirmarContrasena() {
   const router = useRouter();
@@ -69,6 +71,14 @@ export default function ConfirmarContrasena() {
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
           <h1 className="text-2xl font-bold text-center mb-6">Cambiar Contraseña</h1>
+
+           <div className="flex justify-center mb-6">
+            <Link
+              href="/cambiar"
+              className="bg-[#027DF7] text-white px-6 py-3 rounded-lg hover:bg-[#54AFEB] transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              Regresar
+            </Link>
+          </div>
 
           {error && <div className="bg-red-500 text-white p-3 rounded-md mb-4 text-center">{error}</div>}
           {success && <div className="bg-green-500 text-white p-3 rounded-md mb-4 text-center">{success}</div>}
